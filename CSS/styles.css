@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    /* Primary Colors */
+    --green-100: #39AA00;
+    --green-80: #61CA33;
+    --green-60: #88CC66;
+    --green-40: #B0DD99;
+    --green-20: #D7EEDD;
+    /* Secundary Colors */
+    --orange: #fdc300;
+    --green: #007832;
+    --aqua: #50E5F9;
+    /* Basic Colors */
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-100: #313131;
+    --gray-80: #626262;
+    --gray-60: #949494;
+    --gray-40: #c5c5c5;
+    --gray-20: #F6F6F6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+body{
+    background-color: var(--gray-20);
+}
+
+header {
+    background-color: var(--gray-20);
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 1%;
+}
+
+.header-span {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--green-100);
+    padding: 0.5%;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.main-section {
+    height: 50vh;
+    background-image: url('../IMGS/image-page.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+button {
+    width: 120px;
+    height: 36px;
+    background-color: var(--green-100);
+    font-size: 0.8rem;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+}
+
+button .contact {
+    text-decoration: none;
+    color: var(--white);
+}
+
+main{
+    background-color: var(--white);
+    height: 90%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1%;
+    padding: 1.8rem;
+    box-shadow: 0px 0px 5px 6px rgba(0,120,50,1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-continer {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1.25rem;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.card {
+    width: 320px; 
+    height: 360px;
+    padding: 1.8rem;
+    border: 2px solid var(--aqua);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.card h3{
+    margin-bottom: 3rem;
+}
+
+.card img{
+    margin-bottom: 1.5rem;
+}
+
+footer{
+    margin-top: 2%;
+    text-align: center;
+    margin-bottom: 1%;
+    font-size: 1rem;
+}
